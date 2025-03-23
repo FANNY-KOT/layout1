@@ -1,0 +1,446 @@
+:root {
+  --main-color: #324950;
+  --brown-color: #735440;
+  --green-color: #57984c;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.mainContainer {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainInfo {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 805px;
+  width: 100%;
+}
+
+.mainTitle {
+  color: var(--brown-color);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.btn {
+  margin-top: 60px;
+  padding: 20px;
+  border: none;
+  color: white;
+  background-color: var(--green-color);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #64bb55;
+}
+
+/* Crops Section */
+.cropsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  height: 50px;
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.sectionWrapper {
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.sectionsContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.sectionReverse {
+  flex-direction: row-reverse;
+}
+
+.sectionInfo {
+  max-width: 500px;
+}
+
+.secTitle,
+.seedTitleH2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.cotton .secDecoratEl {
+  margin: 20px 0;
+  color: var(--green-color);
+  font-weight: 700;
+}
+
+.secDescription {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--main-color);
+}
+
+.secImgWrapper {
+  max-width: 400px;
+}
+
+.sectionImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.seedWrapper {
+  background-color: #ededed;
+  padding: 30px;
+}
+
+.seedTitleH2 {
+  text-align: center;
+  line-height: 1.3;
+}
+
+.seedList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.seedItem {
+  max-width: 300px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.seedImg {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.seedTitle {
+  margin-top: 10px;
+  border-bottom: 1px solid var(--green-color);
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--green-color);
+}
+
+.seed {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Header */
+
+.layoutWrapper {
+  max-width: 1130px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brandBlock {
+  max-width: 225px;
+  width: 100%;
+}
+
+.navBar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navItemHeader {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--main-color);
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+
+.searchBox {
+  display: flex;
+  position: relative;
+  max-width: 350px;
+  margin-left: auto;
+}
+
+.searchInput {
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  margin-bottom: 20px;
+  max-width: 350px;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 14px;
+  position: relative;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.searchBtn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}
+
+/* Footer */
+
+.footerBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #2d3f45;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  max-width: 725px;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navItem {
+  text-decoration: none;
+  color: white;
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  width: 100%;
+  gap: 10px;
+  margin-left: 40px;
+}
+
+.socialItem {
+  color: #57984c;
+  font-size: 25px;
+}
+
+.footerBottom {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #b9b9b9;
+  background-color: #324950;
+}
+
+@media screen and (max-width: 650px) {
+  .footerBlock {
+    flex-direction: column;
+  }
+
+  .navLinks {
+    margin-bottom: 20px;
+    max-width: 120px;
+  }
+
+  .socialsContainer {
+    margin-left: 0;
+  }
+}
+
+.main {
+  background-color: #fcf0f0;
+}
+
+.productsContainer {
+  max-height: 60vh;
+}
+
+.secTitleProduct {
+  margin: 50px 0;
+}
+
+.dicorateEl {
+  color: var(--green-color);
+  margin-bottom: 50px;
+}
+
+.productsWrapper {
+  max-width: 1150px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.paragraf,
+.paragrafLeftBorder {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+.paragrafLeftBorder {
+  border-left: 4px solid #eb5757;
+  padding: 5px;
+  padding-left: 30px;
+}
+
+.tomatInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+  margin-top: 40px;
+}
+
+.tomatInfoItem {
+  max-width: 350px;
+  padding: 20px;
+}
+
+.tomatInfoTitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  border-bottom: 1px solid var(--main-color);
+  padding-bottom: 10px;
+}
+
+.tomatInfo {
+  padding-top: 10px;
+  line-height: 1.3;
+}
+
+.boldParagraf {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  max-width: 350px;
+  width: 100%;
+}
+
+.cardImg {
+  width: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.cardLink,
+.cardImgLink {
+  text-decoration: none;
+}
+
+.cardInfo {
+  background-color: white;
+  padding: 10px;
+}
+
+.cardLink {
+  color: var(--green-color);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cardParagraf {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--green-color);
+}
+
+@media screen and (max-width: 1200px) {
+  .cardsWrapper,
+  .tomatInfoContainer {
+    justify-content: center;
+  }
+}
