@@ -1,5 +1,5 @@
 const basePath = window.location.hostname.includes('github.io')
-  ? '/layout1/'
+  ? '/layout11/'
   : '/'
 
 document.addEventListener('DOMContentLoaded', function () {

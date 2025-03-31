@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/load-header-footer.js" defer></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main class="cuMain">
+      <div class="mainContainer productsContainer">
+        <div class="imgContainer">
+          <img class="bgImg" src="images/cu-bg.png" alt="home-bg" />
+        </div>
+      </div>
+
+      <div class="productsWrapper">
+        <h2 class="secTitle secTitleProduct">Contact us</h2>
+        <p class="dicorateEl">*****</p>
+
+        <form class="cuForm" action="">
+          <div class="cuFormColumnFirst">
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Name * </span>
+              <input class="cuFormInput" type="text" required />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Company Name </span>
+              <input class="cuFormInput" type="text" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Position </span>
+              <input class="cuFormInput" type="text" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> City </span>
+              <input class="cuFormInput" type="text" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Country </span>
+              <input class="cuFormInput" type="text" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Telephone </span>
+              <input class="cuFormInput" type="tel" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Email * </span>
+              <input class="cuFormInput" type="email" required />
+            </label>
+          </div>
+
+          <div class="cuFormColumnSecond">
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> You are a </span>
+              <select
+                class="cuFormInput cuFormSelect"
+                name="cuSeedSelect"
+                id=""
+              >
+                <option value="seedProducer">seed producer</option>
+                <option value="seedSeller">seed seller</option>
+                <option value="seedMarketer">seed marketer</option>
+              </select>
+              <img class="selectBtn" src="images/arrow-icon.svg" alt="" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> If other, please specify </span>
+              <input class="cuFormInput" type="text" />
+            </label>
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> You are interested in </span>
+              <textarea
+                class="cuFormTextarea"
+                name="cuFormTextarea"
+                id=""
+              ></textarea>
+            </label>
+
+            <label class="cuFormLabel" for="">
+              <span class="cuLabelContent"> Please type this code </span>
+              <div class="cuCodeWrapper">
+                <img class="cuCode" src="images/cu-code.png" alt="" />
+                <input class="cuFormInput" type="text" />
+                <button class="cuFormBtn" type="submit">Send Message</button>
+              </div>
+            </label>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <section class="cuContactInfo">
+      <h3 class="seedTitle">Our Address</h3>
+      <p class="cuContactParagraf">AGRIDERA Seeds & Agriculture Ltd.</p>
+      <p>P.O Box 103,</p>
+      <p>Gedera 70750, Israel.</p>
+      <p>
+        Telephone: <a class="cuTel" href="tel:+97289449222">+972 8 944 9222</a>
+      </p>
+    </section>
+
+    <div id="footer"></div>
+  </body>
+</html>

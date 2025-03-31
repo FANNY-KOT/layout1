@@ -1,24 +1,30 @@
-<div class="layoutWrapper">
-  <div class="brandBlock">
+<div class="container">
+  <div class="imgContainerHeader">
     <a href="/layout1/index.html">
-      <img src="images/logo.png" alt="Logo" />
+      <img src="images/logo.png" alt="Logo" class="logo" />
     </a>
   </div>
-  <div>
-    <div class="searchBox">
-      <input class="searchInput" type="text" placeholder="Search" />
-      <button class="searchBtn">
+  <div class="menuWrapper">
+    <div class="inputWrapper">
+      <input class="input" type="text" placeholder="Search" />
+      <button class="btnLup">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </div>
-    <div class="navBar">
-      <a href="/layout1/index.html" class="navItemHeader">Home</a>
-      <a href="/company" class="navItemHeader">Company</a>
-      <a href="/profile" class="navItemHeader">Profile</a>
-      <a href="/layout1/products.html" class="navItemHeader">Products</a>
-      <a href="/services" class="navItemHeader">Services</a>
-      <a href="/r-and-d" class="navItemHeader">R & D</a>
-      <a href="/contact" class="navItemHeader">Contact</a>
-    </div>
+    <input type="checkbox" id="menuToggle" class="menuToggle" />
+    <label for="menuToggle" class="burgerButton">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="menuContainer">
+      <a href="/layout1/index.html" class="menuLink">Home</a>
+      <a href="/company" class="menuLink">Company</a>
+      <a href="/profile" class="menuLink">Profile</a>
+      <a href="/layout1/products.html" class="menuLink">Products</a>
+      <a href="/services" class="menuLink">Services</a>
+      <a href="/r-and-d" class="menuLink">R & D</a>
+      <a href="/layout1/contact-us.html" class="menuLink">Contact</a>
+    </nav>
   </div>
 </div>
