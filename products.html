@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="js/load-header-footer.js" defer></script>
   </head>
   <body>
@@ -26,19 +27,19 @@
     <main class="main">
       <div class="mainContainer productsContainer">
         <div class="imgContainer">
-          <img class="bgImg" src="images/products-tomato.png" alt="home-bg" />
+          <img class="bgImg" src="images/potato-bgc.jpg" alt="home-bg" />
         </div>
       </div>
 
       <div class="productsWrapper">
         <h2 class="secTitle secTitleProduct">
-          Agridera Fresh Market Tomato Hybrids
+          Agridera Fresh Market Potato Hybrids
         </h2>
         <p class="dicorateEl">*****</p>
 
         <p class="paragraf">
           Agridera aims to be one of the world's leading companies in the
-          breeding, production, and marketing of tomato seeds.
+          breeding, production, and marketing of Potato seeds.
           <span class="boldText">
             We invest intensively in research and development to provide
             solutions to growers and consumers in numerous countries around the
@@ -48,11 +49,11 @@
           to different markets globally.
         </p>
         <p class="paragraf">
-          Currently, emphasis is placed on combining Tomato Yellow Leaf Curl
-          Virus (TYLCV) and Tomato Spotted Wilt Virus (TSWV) resistances with
-          other soil borne diseases into superior tomato breeding lines and
+          Currently, emphasis is placed on combining Potato Yellow Leaf Curl
+          Virus (TYLCV) and Potato Spotted Wilt Virus (TSWV) resistances with
+          other soil borne diseases into superior Potato breeding lines and
           hybrids. Moreover, comprehensive efforts are being undertaken to
-          develop varieties resistance to TBRFV virus (Tomato Brown Rugose Fruit
+          develop varieties resistance to TBRFV virus (Potato Brown Rugose Fruit
           Virus).
         </p>
         <p class="paragraf">
@@ -63,14 +64,14 @@
           types, namely round and elongated shapes.
         </p>
         <p class="paragrafLeftBorder">
-          Agirdera Tomato breeding programs are focusing on three main segments:
-          Greenhouse Indeterminate Tomatoes, Open-field Indeterminate Tomatoes,
-          and Bush Type Open-field Tomatoes.
+          Agirdera Potato breeding programs are focusing on three main segments:
+          Greenhouse Indeterminate Potatoes, Open-field Indeterminate Potatoes,
+          and Bush Type Open-field Potatoes.
         </p>
 
         <div class="tomatInfoContainer">
           <div class="tomatInfoItem">
-            <h3 class="tomatInfoTitle">Greenhouse Tomato Breeding Program</h3>
+            <h3 class="tomatInfoTitle">Greenhouse Potato Breeding Program</h3>
             <p class="tomatInfo">
               <span class="boldText"
                 >This breeding is aimed for the Spanish and Turkish markets.
@@ -83,7 +84,7 @@
           </div>
 
           <div class="tomatInfoItem">
-            <h3 class="tomatInfoTitle">Open-field Indeterminate Tomatoes</h3>
+            <h3 class="tomatInfoTitle">Open-field Indeterminate Potatoes</h3>
             <p class="tomatInfo">
               <span class="boldText"
                 >This breeding is for Brazilian, Moroccan, and Turkish markets.
@@ -96,7 +97,7 @@
           </div>
 
           <div class="tomatInfoItem">
-            <h3 class="tomatInfoTitle">Open-field Bush Type Tomatoes</h3>
+            <h3 class="tomatInfoTitle">Open-field Bush Type Potatoes</h3>
             <p class="tomatInfo">
               <span class="boldText"
                 >This breeding is for Mediterranean markets.
@@ -115,100 +116,24 @@
           the world.
         </p>
 
-        <div class="cardsWrapper">
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
+        <div class="cardsWrapper" id="app">
+          <div class="card" v-for="product in products" :key="product.id">
+            <a
+              class="cardImgLink"
+              :href="'/layout1/tomato-one.html#' + product.id"
+              @click="addItem(product.id)"
+            >
+              <img class="cardImg" :src="product.image" :alt="product.title" />
             </a>
             <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1000 (TAG 853)</h3>
+              <a
+                class="cardLink"
+                :href="'/layout1/tomato-one.html#' + product.id"
+                @click="addItem(product.id)"
+              >
+                <h3>{{ product.title }}</h3>
               </a>
-              <p class="cardParagraf">Tomato Determinate Red Standard Round</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1001 (TAG 855)</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red Standard Round</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1002 (TAG 809)</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red Standard Round</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1003 (TAG 834 )</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red Standard Round</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1004 (TAG 848)</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red BEEF Round</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1005 (TAG 800)</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red Standard Round</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1006 (TAG 898)</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red Elongated</p>
-            </div>
-          </div>
-
-          <div class="card">
-            <a class="cardImgLink" href="/layout1/tomato-one.html">
-              <img class="cardImg" src="images/card-tomato-one.png" alt="" />
-            </a>
-            <div class="cardInfo">
-              <a class="cardLink" href="/layout1/tomato-one.html">
-                <h3>TAG 1007 (TAG 816)</h3>
-              </a>
-              <p class="cardParagraf">Tomato Determinate Red Elongated</p>
+              <p class="cardParagraf">{{ product.short_text }}</p>
             </div>
           </div>
         </div>
